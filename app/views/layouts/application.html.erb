@@ -40,7 +40,15 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-    <%= yield %>
+
+
+
+    <div class="container-fluid remove-all-margin">
+          <%= render "/layouts/flashmessages" %>
+          <%= yield %>
+
+    </div>
+
     <script src="app/assets/javascripts/custom.js"></script>
   </body>
 </html>
