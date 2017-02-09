@@ -1,0 +1,8 @@
+<% if logged_in? && current_user.username == "kenbanico" %>
+<% @emails.each do |email| %>
+    <p><%= email.name %></p>
+    <p><%= email.email %></p>
+    <p><%= email.message %></p>
+
+<% end %>
+<% end %>

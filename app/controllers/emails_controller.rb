@@ -1,4 +1,11 @@
 class EmailsController < ApplicationController
+  before_action :require_user, only: [:index]
+  
+  def index
+    @emails = Email.all()
+  end
+  
+  
   def new
     @email = Email.new
 
@@ -17,14 +24,14 @@ class EmailsController < ApplicationController
       end
       flash[:danger] = errors
       redirect_to root_path
+      end
     end
-    end
-
-
   end
+  
+ 
 
   private
   def email_params
-    params.require(:email).permit(:name, :email, :message, :number)
+    params.require(:email).permit(:name, :email, :message)
   end
 end
