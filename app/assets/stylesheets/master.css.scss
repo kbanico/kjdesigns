@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6{
 .about-us{
   background:url("/assets/guam.jpg")no-repeat fixed center center;
   background-size:cover;
-  height:600px;
+  height:350px;
   color:white;
   font-family: 'Arsenal', sans-serif;
   /*background:rgba(143,105,227,0.5);*/
@@ -181,9 +181,16 @@ body {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width : 480px) {
-  .col-xs-6 i{
+  .col-xs-6 i, .graphic-design i{
     font-size:150px;
   }
+  
+  .about-us{
+  height:650px;
+ 
+}
+  
+  
 
 }
 
