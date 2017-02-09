@@ -192,13 +192,7 @@
         <p>4578 Marmora Road, Glasgow D04 89GR</p>
         <p> 800-2345-6790 800-2345-6789</p>
         <p>Mon-Sat 8:00 am to 8:00 pm</p>
-        <% if logged_in? %>
-          <p><%= link_to "Log out", logout_path, method: :delete %></p>
-        <% else %>
-          <p><%= link_to "Sign In", login_path %></p>
-          <p><%= link_to "Sign Up", signup_path %></p>
-          
-        <% end %>
+
       </div>
 
 

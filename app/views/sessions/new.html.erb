@@ -1,6 +1,9 @@
-<h1>Log in</h1>
-<%= simple_form_for(:session, url: login_path) do |f| %>
-    <%= f.input :email %>
-    <%= f.input :password, label: "password" %>
-    <%= f.submit "Log In" %>
-<% end %>
+<br><br>
+<div class="col-xs-10 col-xs-offset-1">
+  <h1>Log in</h1>
+  <%= simple_form_for(:session, url: login_path) do |f| %>
+      <%= f.input :email %>
+      <%= f.input :password, label: "password" %>
+      <%= f.submit "Log In" %>
+  <% end %>
+</div>

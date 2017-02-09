@@ -1,11 +1,11 @@
 class EmailsController < ApplicationController
   before_action :require_user, only: [:index]
-  
+
   def index
     @emails = Email.all()
   end
-  
-  
+
+
   def new
     @email = Email.new
 
@@ -27,8 +27,8 @@ class EmailsController < ApplicationController
       end
     end
   end
-  
- 
+
+
 
   private
   def email_params
