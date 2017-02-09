@@ -9,6 +9,7 @@ class UsersController < ApplicationController
           flash[:success] = "Welcome To KJDESIGNS #{@user.username}"
           redirect_to root_path
        else
+           flash[:danger] = "Something went wrong"
           render "new"
        end
        

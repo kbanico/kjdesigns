@@ -1,8 +1,18 @@
+<br></br>
+<h1 class="text-center">Contact Form Messages</h1>
+<br></br>
 <% if logged_in? && current_user.username == "kenbanico" %>
 <% @emails.each do |email| %>
-    <p><%= email.name %></p>
-    <p><%= email.email %></p>
-    <p><%= email.message %></p>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-3">
+       
+        <div class="speech">
+            <p>Name: <%= email.name %></p>
+            <p>Email: <%= email.email %></p>
+            <p>Message: <%= email.message %></p>
+        </div>
 
+    </div>
+    
 <% end %>
+<br class="clear"></br>
 <% end %>
